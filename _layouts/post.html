@@ -1,0 +1,19 @@
+---
+layout: default
+---
+<article>
+
+  <header>
+    <h1>{{ page.title }}</h1>
+    <br>
+    <div class="item">
+      <img {% if item.image_bw %}class="bw"{% endif %} src="{{ page.image }}">
+    </div>
+    <h3>{{ page.description }}</h3>
+    <h4>{{ page.author }} | {{ page.date | date: "%Y.%m.%d" }}</h4>
+  </header>
+  <div class="item">
+    {{ content }}
+  </div>
+
+</article>
