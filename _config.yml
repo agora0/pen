@@ -1,7 +1,7 @@
 title: The Republic of Agora
 description: UNITE THE PUBLIC ♢ VOL.46 © MMXXIV
 baseurl: "/pen/0x2e" # subpath of your site, e.g. /blog
-url: "https://agora0.gitlab.io" # hostname & protocol, e.g. http://example.com
+url: "https://agora0.github.io" # hostname & protocol, e.g. http://example.com
 google_analytics: 'UA-166928354-2' # agorahub-pen0
 gh_team: orgs/agorahub/teams/pen
 gh_repo: agorahub/pen0
