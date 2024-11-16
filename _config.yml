@@ -1,0 +1,16 @@
+# Site settings
+title: 零新聞 2024.11
+description: >- # this means to ignore newlines until "baseurl:"
+  Read news on demand.
+baseurl: "/pen/2411" # the subpath of your site, e.g. /blog
+url: "https://agora0.github.io" # the hostname & protocol, e.g. http://example.com
+github_username: agorahub
+
+# Build settings
+timezone: Asia/Singapore
+theme: minima
+paginate: 50
+plugins:
+  - jekyll-feed
+  - jekyll-paginate
+
