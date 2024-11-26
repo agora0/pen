@@ -1,0 +1,51 @@
+---
+layout: default
+---
+
+<!-- HERO SECTION -->
+<section class="hero">
+  <!-- LEFT HERO -->
+  <div class="sideHeroColumn">
+    {% for item in site.heros reversed %}
+      {% if item.position == 'left' %}
+        {% include article.html item=item %}
+        {% break %}
+      {% endif %}
+    {% endfor %}
+  </div>
+
+  <!-- HERO -->
+  <div class="heroColumn">
+    {% for item in site.heros reversed %}
+      {% if item.position == 'center' %}
+        {% include article.html item=item %}
+        {% break %}
+      {% endif %}
+    {% endfor %}
+  </div>
+
+  <!-- RIGHT HERO -->
+  <div class="sideHeroColumn">
+    {% for item in site.heros reversed %}
+      {% if item.position == 'right' %}
+        {% include article.html item=item %}
+        {% break %}
+      {% endif %}
+    {% endfor %}
+  </div>
+
+</section>
+
+<!-- MASONRY SECTION -->
+<section class="masonry">
+  {% for item in site.columns reversed %}
+    {% if forloop.index <= 10 or forloop.index == forloop.length %}
+    <div class="item">
+      {% include article.html item=item %}
+    </div>
+    {% endif %}
+  {% endfor %}
+  <div id="masthead">
+    <h3><a style="text-decoration:none" href="{{ '/c1/' | prepend: site.baseurl | prepend: site.url }}">More Columns...</a></h3>
+  </div>
+</section>
